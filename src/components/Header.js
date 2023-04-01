@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = ({ setVisible, visible }) => {
   return (
-    <header>
+    <header className='Header'>
       <button
         onClick={() => {
           setVisible(!visible); // on inverse la valeur de `visible` à chaque click

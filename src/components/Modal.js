@@ -1,9 +1,14 @@
 import React from 'react'
 
-const Modal = ({ setVisible }) => {
+const Modal = ({ visible, setVisible }) => {
     return (
-    <div className="modal-root">
-    <div className="Modal">
+    <div className="modal-root"
+        onClick={() => {
+        setVisible(false);
+      }}>
+    <div className="Modal" onClick={(event) => {
+        event.stopPropagation();
+    }}>
       {/* button pour fermer la modal */}
       <button
         onClick={() => {
