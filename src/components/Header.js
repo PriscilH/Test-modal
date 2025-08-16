@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Header = ({ setVisible, visible }) => {
   return (
     <header className='Header'>
